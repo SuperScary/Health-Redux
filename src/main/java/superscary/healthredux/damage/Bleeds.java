@@ -34,9 +34,9 @@ public interface Bleeds
 
     /**
      * Fires when the entity takes damage.
-     * @param amount The amount of damage the entity takes.
+     * @param amount The part taking damage.
      */
-    void damage (double amount);
+    void damage (Damageable part);
 
     /**
      * Heals the entity.
