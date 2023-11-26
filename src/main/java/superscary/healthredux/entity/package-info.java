@@ -1,0 +1,1 @@
+package superscary.healthredux.entity;
