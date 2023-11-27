@@ -1,10 +1,7 @@
 package superscary.healthredux.entity;
 
-import com.mojang.authlib.GameProfile;
-import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.Level;
 import superscary.healthredux.config.CommonConfig;
 import superscary.healthredux.damage.Bleeds;
 import superscary.healthredux.damage.CalculateDamage;
@@ -16,7 +13,7 @@ public class ReduxEntity extends Player implements Bleeds
     private double playerHealth = CommonConfig.defaultPlayerHealth;
 
     private double bloodAmount = CommonConfig.defaultPlayerBloodAmount;
-    private boolean isBleedig = false;
+    private boolean isBleeding = false;
 
     public ReduxEntity (Entity entity)
     {
@@ -38,7 +35,7 @@ public class ReduxEntity extends Player implements Bleeds
     @Override
     public boolean isBleeding ()
     {
-        return isBleedig;
+        return isBleeding;
     }
 
     @Override
